@@ -42,14 +42,3 @@ The script uses NumPy's PCG64 bit generator with seed `2026` and generates
 
 The PDFs are saved in the directory from which the script is run.
 
-## Gamma proposal comparison
-
-Both proposals target `Gamma(3, 1)` and stop after 10,000 accepted
-samples. The reference run produced the following results.
-
-| Proposal rate | Theoretical acceptance | Observed acceptance | Total proposals |
-| --- | ---: | ---: | ---: |
-| `1/2` | 46.18% | 46.44% | 21,535 |
-| `1/3` | 54.73% | 54.00% | 18,520 |
-
-The proposal with rate `1/3` used about 14% fewer attempts in this run.
